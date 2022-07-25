@@ -1,0 +1,17 @@
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\wordlist.txt
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.exe
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.deps.json
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.runtimeconfig.json
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.runtimeconfig.dev.json
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.dll
+C:\Users\ranco\source\repos\hangman-app\bin\Release\netcoreapp3.1\hangman-app.pdb
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.csproj.AssemblyReference.cache
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman_app.HangmanUI.resources
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.csproj.GenerateResource.cache
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.AssemblyInfoInputs.cache
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.AssemblyInfo.cs
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.csproj.CoreCompileInputs.cache
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.dll
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.pdb
+C:\Users\ranco\source\repos\hangman-app\obj\Release\netcoreapp3.1\hangman-app.genruntimeconfig.cache
