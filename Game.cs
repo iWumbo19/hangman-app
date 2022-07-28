@@ -6,6 +6,7 @@ namespace hangman_app
 {
     internal static class Game
     {
+
         private static string[] _words;
         private static string[] _lines;
         private static string _curWord;
@@ -14,19 +15,17 @@ namespace hangman_app
         private static int _misses;
         private static List<char> _guesses;
 
-       
+        #region Private Methods
         internal static void UpdateWords(string[] nuWords)
         {
             if (nuWords == null) throw new ArgumentNullException(nameof(nuWords));
             _words = nuWords;
         }
-        
         private static string GetRandomWord()
         {
             Random random = new Random();
             return _words[random.Next(0, _words.Length)];
         }
-
         private static int DecideMisses(string word)
         {
             switch (word.Length)
@@ -41,7 +40,6 @@ namespace hangman_app
                     return 3;
             }
         }
-
         private static void UpdateSolved(int[] indicies)
         {
             foreach (var index in indicies)
@@ -49,14 +47,12 @@ namespace hangman_app
                 _solved[index] = true;
             }
         }
-
         private static void UpdateCurrentWord(string word)
         {
             if (word == null) throw new ArgumentNullException(nameof(word));
             _curWord = word;
             ClearSolved();
         }
-
         private static void ClearSolved()
         {
             _solved = new bool[_curWord.Length];
@@ -65,7 +61,8 @@ namespace hangman_app
                 _solved[i] = false;
             }
         }
-
+        #endregion
+        #region Public Methods
         public static int[] GetCharIndicies(char c)
         {
             List<int> output = new List<int>();
@@ -75,7 +72,6 @@ namespace hangman_app
             }
             return output.ToArray();
         }
-
         public static bool IsSolved()
         {
             foreach (bool solved in _solved)
@@ -84,7 +80,6 @@ namespace hangman_app
             }
             return true;
         }
-
         public static int[] GuessLetter(char c)
         {
             int[] indicies = GetCharIndicies(c);
@@ -97,17 +92,14 @@ namespace hangman_app
             UpdateSolved(indicies);
             return indicies;
         }
-
         public static bool IsOngoing()
         {
             return _gameStarted;
         }
-
         public static char[] Guesses()
         {
             return _guesses.ToArray();
         }
-
         public static string Start()
         {
             string word = GetRandomWord();
@@ -117,26 +109,23 @@ namespace hangman_app
             _gameStarted = true;
             return word;
         }
-
         public static void UpdateLines(string[] nuLines)
         {
             if (nuLines == null) throw new ArgumentNullException(nameof(nuLines));
             _lines = nuLines;
         }
-
         public static bool Failed()
         {
             return _misses == 0 ? true : false;
         }
-
         public static int MissesLeft()
         {
             return _misses;
         }
-
         public static string GetCurrentWord()
         {
             return _curWord;
         }
+        #endregion
     }
 }
