@@ -32,11 +32,11 @@ namespace hangman_app
             switch (word.Length)
             {
                 case int n when (n >= 1 && n <= 5):
-                    return 5;
-                case int n when (n >= 6 && n <= 8):
-                    return 6;
-                case int n when (n > 8):
                     return 7;
+                case int n when (n >= 6 && n <= 8):
+                    return 8;
+                case int n when (n > 8):
+                    return 9;
                 default:
                     return 3;
             }
